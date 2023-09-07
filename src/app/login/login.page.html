@@ -1,0 +1,20 @@
+<div class="containerpr">
+<div class="disenno">
+  <h1 class="h1si">REGISTRAPP</h1>
+  <p class="h1si">Iniciar sesion con su correo</p>
+</div>
+<div class="input-btn">
+  <ion-item class="CamposIngreso">
+    <ion-input label="Ingrese su correo" placeholder="Ingrese su correo" type="correo" labelPlacement="floating"
+      [counter]="true"></ion-input>
+    <ion-input label="Ingrese su contraseña" placeholder="Ingrese Contraseña" type="password" labelPlacement="floating"
+      [counter]="true"></ion-input>
+  </ion-item>
+  <section>
+    <div class="ayudapls">
+      <ion-button mat-raised-button [routerLink]="['/home']">Ingresar</ion-button>
+      <ion-button mat-raised-button [routerLink]="['/recuperar-constrasenna']">Restablecer Contraseña</ion-button>
+    </div>
+  </section>
+</div>
+</div>

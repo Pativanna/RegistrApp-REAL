@@ -1,0 +1,21 @@
+<div class="containerpr">
+  <div class="disenno">
+    <h1 class="h1si">¿Perdiste tu contraseña?</h1>
+    <p class="h1si">Ingresa tus datos para recuperarla</p>
+  </div>
+  <div class="input-btn">
+    <ion-item class="CamposIngreso">
+      <ion-input label="Ingrese su correo" placeholder="Ingrese su correo" type="correo" labelPlacement="floating"
+        [counter]="true"></ion-input>
+      <ion-input label="Ingrese su contraseña" placeholder="Ingrese Contraseña" type="password" labelPlacement="floating"
+        [counter]="true"></ion-input>
+    </ion-item>
+    <section>
+      <div class="ayudapls">
+        <ion-button mat-raised-button [routerLink]="['/home']">Recuperar clave</ion-button>
+        <ion-button mat-raised-button [routerLink]="['/login']">Iniciar sesion</ion-button>
+      </div>
+    </section>
+    <p class="h1si">Enviaremos un correo de recuperacion</p>
+  </div>
+  </div>

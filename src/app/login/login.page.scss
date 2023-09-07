@@ -1,0 +1,15 @@
+.containerpr{
+    display: flexbox;
+    flex-wrap: wrap;
+    justify-content: center;
+    .h1si{
+        padding-top: 30%;
+        padding-left: 30%;
+    }
+
+}
+.ayudapls{
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+}
