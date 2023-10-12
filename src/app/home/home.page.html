@@ -7,6 +7,9 @@
   <ion-content class="ion-padding">Elija una Opción
     <ion-list>
       <ion-item>
+        <button mat-raised-button [routerLink]="['/home']">Ingreso</button>
+      </ion-item>
+      <ion-item>
         <button mat-raised-button [routerLink]="['/login']">Ingreso</button>
       </ion-item>
       <ion-item>
@@ -27,6 +30,7 @@
         <ion-menu-button></ion-menu-button>
       </ion-buttons>
       <ion-title>Menu</ion-title>
+      <ion-title>Correo:{{ correo }}</ion-title>
       
     </ion-toolbar>
   </ion-header>

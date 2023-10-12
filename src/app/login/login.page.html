@@ -1,3 +1,39 @@
+<ion-menu contentId="main-content">
+  <ion-header>
+    <ion-toolbar>
+      <ion-title>Menu</ion-title>
+    </ion-toolbar>
+  </ion-header>
+  <ion-content class="ion-padding">Elija una Opción
+    <ion-list>
+      <ion-item>
+        <button mat-raised-button [routerLink]="['/home']">menu</button>
+      </ion-item>
+      <ion-item>
+        <button mat-raised-button [routerLink]="['/login']">Ingreso</button>
+      </ion-item>
+      <ion-item>
+        <button mat-raised-button [routerLink]="['/restablecer']">Restablecer Contraseña</button>
+      </ion-item>
+      <ion-item>
+        <a href="">Generar código QR</a>
+      </ion-item>
+
+    </ion-list>
+  </ion-content>
+</ion-menu>
+<div class="ion-page" id="main-content">
+  <ion-header>
+    <ion-toolbar>
+      <ion-buttons slot="start">
+        <ion-menu-button></ion-menu-button>
+      </ion-buttons>
+      <ion-title>Menu</ion-title>
+      
+    </ion-toolbar>
+  </ion-header>
+  <ion-content class="ion-padding"> RegistrApp. </ion-content>
+</div>
 <div class="containerpr">
 <div class="disenno">
   <h1 class="h1si">REGISTRAPP</h1>
@@ -5,7 +41,7 @@
 </div>
 <div class="input-btn">
   <ion-item class="CamposIngreso">
-    <ion-input label="Ingrese su correo" placeholder="Ingrese su correo" type="correo" labelPlacement="floating"
+    <ion-input [(ngModel)]="usuario.correo" label="Ingrese su correo" placeholder="Ingrese su correo" type="correo" labelPlacement="floating"
       [counter]="true"></ion-input>
     <ion-input label="Ingrese su contraseña" placeholder="Ingrese Contraseña" type="password" labelPlacement="floating"
       [counter]="true"></ion-input>
